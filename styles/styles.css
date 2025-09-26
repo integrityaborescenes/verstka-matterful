@@ -52,6 +52,7 @@ table {
     --color-black: #000000;
     --color-light-gray: #EEEEEE;
     --color-dark-gray: #888888;
+    --backgroundcolor: #F4F4F4;
     --font-family-main: 'Montserrat', sans-serif;
     --font-family-second: 'Playfair Display', sans-serif;
 
@@ -60,7 +61,7 @@ table {
 }
 
 body {
-    background-color: var(--color-light-gray);
+    background-color: var(--backgroundcolor);
 }
 
 .top {
@@ -71,7 +72,7 @@ body {
 
 .logo {
     width: 28.75rem;
-    height: 5.7rem;
+    height: 5.69rem;
     margin-top: 2.5rem;
     padding-bottom: 1rem;
 }
@@ -125,4 +126,153 @@ body {
     left: 5.5rem;
     padding-top: 1.875rem;
 }
+
+.mainH {
+    font-family: var(--font-family-second);
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.mainblock {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    justify-content: center;
+    height: 277.327rem;
+    width: 75rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.938rem;
+}
+
+.mainobject1 {
+    grid-area: 1 / 2 / 1 / 2;
+    background-color: var(--color-white);
+    width: 41.875rem;
+    height: 36.498rem;
+    border-radius: 0.5rem;
+}
+
+.mainobjectimage {
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.mainobjectBLOCK {
+    padding: 1.88rem 1.88rem 3.12rem;
+}
+
+.mainobject2 {
+    grid-area: 2 / 1 / 2 / 2;
+    background-color: var(--color-white);
+    width: 41.875rem;
+    height: 36.498rem;
+    border-radius: 0.5rem;
+}
+
+.mainobject3 {
+    grid-area: 2 / 2 / 3 / 2;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    width: 29.375rem;
+    height: 36.498rem;
+    border-radius: 0.5em;
+    margin-left: 2rem;
+}
+
+.mainobject3 svg {
+    object-fit: cover;
+}
+
+.before {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.beforeLabel {
+    position: absolute;
+    overflow: hidden;
+    top: 5%;
+    left: 1rem;
+    width: 80px;
+    height: 80px;
+    transition: opacity 0.3s ease;
+}
+
+.afterLabel {
+    position: absolute;
+    overflow: hidden;
+    top: 5%;
+    right: 1rem;
+    justify-content: right;
+    width: 80px;
+    height: 80px;
+    transition: opacity 0.3s ease;
+}
+
+.change {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: var(--color-light-gray);
+    z-index: 1;
+}
+
+.sliderButton {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.mainobject4 { grid-area: 3 / 1 / 3 / 2; }
+.mainobject5 { grid-area: 3 / 2 / 3 / 2; }
+.mainobject6 { grid-area: 4 / 1 / 4 / 2; }
+.mainobject7 { grid-area: 5 / 1 / 5 / 2; }
+.mainobject8 { grid-area: 5 / 2 / 5 / 2; }
+.mainobject9 { grid-area: 6 / 1 / 6 / 2; }
+.mainobject10 { grid-area: 6 / 2 / 6 / 2;}
+.mainobject11 { grid-area: 7 / 1 / 7 / 2;}
+.mainobject12 { grid-area: 7 / 2 / 7 / 2;}
+
+.mainobjectP {
+    font-family: var(--font-family-main);
+    font-weight: bold;
+    line-height: 1.313rem;
+    font-size: 0.875rem;
+    color: var(--color-dark-gray);
+    text-transform: uppercase;
+}
+
+.mainobjectP2 {
+    font-family: var(--font-family-main);
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.mainobjectH3 {
+    font-family: var(--font-family-second);
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+
 
