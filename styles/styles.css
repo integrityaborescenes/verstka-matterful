@@ -141,12 +141,10 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(7, 1fr);
-    justify-content: center;
     height: 277.327rem;
     width: 75rem;
-    text-align: center;
-    margin: 0 auto;
     padding: 0.938rem;
+    margin: auto;
 }
 
 .mainobject1 {
