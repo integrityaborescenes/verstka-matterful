@@ -1,6 +1,6 @@
-const slider = document.querySelector('.mainobject3')
+const slider = document.querySelector('.mainObject3')
 const before = slider.querySelector('.before')
-const beforeImage = before.querySelector('svg')
+const beforeImage = before.querySelector('img')
 const change = slider.querySelector('.change')
 const body = document.body
 const beforeLabel = document.querySelector('.beforeLabel')
@@ -26,6 +26,11 @@ const beforeAfterSlider = (x) => {
     } else {
         afterLabel.style.opacity = "1";
     }
+}
+
+const pauseEvents = (b) => {
+    b.preventDefault()
+    b.stopPropagation()
 }
 
 body.addEventListener('pointerup', () => {

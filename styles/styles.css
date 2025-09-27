@@ -139,12 +139,13 @@ body {
 
 .mainblock {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    height: 277.327rem;
-    width: 75rem;
+    grid-template-columns: repeat(2, 0.1fr);
+    grid-template-rows: repeat(7, 0.1fr);
     padding: 0.938rem;
-    margin: auto;
+    margin: 0 auto;
+    width: 120rem;
+    height: 285.887rem;
+    justify-content: center;
 }
 
 .mainobject1 {
@@ -153,6 +154,7 @@ body {
     width: 41.875rem;
     height: 36.498rem;
     border-radius: 0.5rem;
+    margin-bottom: 2rem;
 }
 
 .mainobjectimage {
@@ -171,7 +173,7 @@ body {
     border-radius: 0.5rem;
 }
 
-.mainobject3 {
+.mainObject3 {
     grid-area: 2 / 2 / 3 / 2;
     position: relative;
     overflow: hidden;
@@ -180,10 +182,15 @@ body {
     height: 36.498rem;
     border-radius: 0.5em;
     margin-left: 2rem;
+    margin-bottom: 2rem;
+    user-select: none;
 }
 
-.mainobject3 svg {
+.mainObject3 img {
     object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: left;
 }
 
 .before {
@@ -221,7 +228,7 @@ body {
     position: absolute;
     left: 50%;
     top: 0;
-    width: 1px;
+    width: 0px;
     height: 100%;
     background-color: var(--color-light-gray);
     z-index: 1;
@@ -230,20 +237,99 @@ body {
 .sliderButton {
     content: "";
     position: absolute;
+    background-color: #00000088;
     left: 50%;
     top: 50%;
     border-radius: 100%;
     transform: translate(-50%, -50%);
 }
 
-.mainobject4 { grid-area: 3 / 1 / 3 / 2; }
-.mainobject5 { grid-area: 3 / 2 / 3 / 2; }
-.mainobject6 { grid-area: 4 / 1 / 4 / 2; }
-.mainobject7 { grid-area: 5 / 1 / 5 / 2; }
-.mainobject8 { grid-area: 5 / 2 / 5 / 2; }
-.mainobject9 { grid-area: 6 / 1 / 6 / 2; }
+.mainobject4 {
+    grid-area: 3 / 1 / 3 / 2;
+    align-items: end;
+    margin-right: 2rem;
+    text-align: end;
+}
+
+.mainobject5 {
+    grid-area: 3 / 2 / 3 / 2;
+    background-color: var(--color-white);
+    width: 41.875rem;
+    height: 38rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+.mainobject6 {
+    grid-area: 4 / 1 / 4 / 2;
+    background-color: var(--color-white);
+    width: 41.875rem;
+    height: 38rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+.mainObject7 {
+    grid-area: 5 / 1 / 5 / 2;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    width: 29.375rem;
+    height: 36.498rem;
+    border-radius: 0.5em;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    user-select: none;
+    left: 25%;
+}
+
+.mainObject7 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: left;
+}
+
+.beforeLabel2 {
+    position: absolute;
+    overflow: hidden;
+    top: 5%;
+    left: 1rem;
+    width: 80px;
+    height: 80px;
+    transition: opacity 0.3s ease;
+}
+
+.afterLabel2 {
+    position: absolute;
+    overflow: hidden;
+    top: 5%;
+    right: 1rem;
+    justify-content: right;
+    width: 80px;
+    height: 80px;
+    transition: opacity 0.3s ease;
+}
+
+.mainobject8 {
+    grid-area: 5 / 2 / 5 / 2;
+    background-color: var(--color-white);
+    width: 41.875rem;
+    height: 36.498rem;
+    border-radius: 0.5rem;
+}
+
+.mainobject9 {
+    grid-area: 6 / 1 / 6 / 2;
+    background-color: var(--color-white);
+    width: 41.875rem;
+    height: 38rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
 .mainobject10 { grid-area: 6 / 2 / 6 / 2;}
+
 .mainobject11 { grid-area: 7 / 1 / 7 / 2;}
+
 .mainobject12 { grid-area: 7 / 2 / 7 / 2;}
 
 .mainobjectP {
@@ -253,12 +339,14 @@ body {
     font-size: 0.875rem;
     color: var(--color-dark-gray);
     text-transform: uppercase;
+    text-align: center;
 }
 
 .mainobjectP2 {
     font-family: var(--font-family-main);
     line-height: 1.5rem;
     font-size: 1rem;
+    text-align: center;
 }
 
 .mainobjectH3 {
@@ -270,6 +358,7 @@ body {
     text-align: center;
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
+    text-align: center;
 }
 
 
