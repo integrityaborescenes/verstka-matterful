@@ -667,3 +667,82 @@ body {
     text-transform: uppercase;
     font-family: var(--font-family-main);
 }
+
+.signUp {
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-black);
+    height: 12.313rem;
+    padding: 0 22.5rem;
+    gap: 30px;
+    justify-items: center;
+}
+
+.signUpFlex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 32.606rem;
+    height: 4.813rem;
+    padding: 0 0.916rem 0 0.938rem;
+
+}
+
+.signUpFlex h3{
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.625rem;
+    font-family: var(--font-family-second);
+    color: var(--color-white);
+}
+
+.signUpFlex p {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem;
+    font-family: var(--font-family-main);
+    color: var(--color-white);
+}
+
+.signUp button {
+    display: flex;
+    align-items: flex-start;
+    border: 0.063rem solid var(--color-white);
+    width: 7.181rem;
+    height: 3.5rem;
+    padding: 1.25rem 1.556rem 1.25rem 1.5rem;
+    background-color: var(--color-black);
+    cursor: pointer;
+    transition: background-color 2s ease 0s;
+}
+
+.signUp button:hover {
+    background-color: var(--color-dark-gray);
+}
+
+.signUp input {
+    width: 31.469rem;
+    height: 3.25rem;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.875rem;
+    font-family: var(--font-family-main);
+    color: var(--color-dark-gray);
+    background-color: var(--color-black);
+    border: none;
+    border-bottom: 0.063rem solid var(--color-dark-gray);
+}
+
+.signUp button p {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1rem;
+    color: var(--color-white);
+    font-family: var(--font-family-main);
+}
