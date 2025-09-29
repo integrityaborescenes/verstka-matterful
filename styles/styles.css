@@ -61,7 +61,7 @@ table {
 
 body {
     background-color: var(--backgroundcolor);
-
+    overflow-x: hidden;
 }
 
 .top {
@@ -548,13 +548,10 @@ body {
     margin-top: 3rem;
 }
 
-
-
 .locationGrid {
     display: grid;
     justify-content: center;
     grid-template-columns: 0.1fr 0.1fr;
-
 }
 
 .locationH {
@@ -568,10 +565,12 @@ body {
 
 .locationWestCoast {
     position: relative;
+    left: 0;
 }
 
 .locationCalifornia {
     position: relative;
+    left: 0;
 }
 
 .locationCaliforniaText {
