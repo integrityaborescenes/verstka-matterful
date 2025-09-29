@@ -612,3 +612,58 @@ body {
     color: var(--color-white);
     font-family: var(--font-family-main);
 }
+
+.contactus {
+    justify-items: center;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.contactus h3 {
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.625rem;
+    font-family: var(--font-family-second);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.contactus p {
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
+    font-family: var(--font-family-main);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.contactus button {
+    width: 8.475rem;
+    height: 2.875rem;
+    padding: 1rem 1.226rem;
+    display: inline-flex;
+    align-items: flex-start;
+    border: 0.063rem solid var(--color-black);
+    text-align: center;
+    cursor: pointer;
+    justify-content: center;
+    transition: background-color 2s ease 0s;
+    transition: color 2s ease 0s;
+}
+
+.contactus button:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.contactus button p {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.875rem;
+    text-transform: uppercase;
+    font-family: var(--font-family-main);
+}
