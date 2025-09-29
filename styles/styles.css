@@ -144,6 +144,7 @@ body {
     margin: 0 auto;
     justify-content: center;
     margin-bottom: 5rem;
+    justify-items: stretch;
 }
 
 .mainobject1 {
@@ -436,6 +437,7 @@ body {
 .gallery {
     display: block;
     text-align: center;
+    justify-items: center;
 }
 
 .galleryH {
@@ -485,6 +487,7 @@ body {
     height: 38.25rem;
     padding: 3.75rem 22.5rem;
     margin-top: 5rem;
+    justify-items: center;
 }
 
 .servicesH {
@@ -520,8 +523,9 @@ body {
 }
 
 .clientList {
-    height: 37.55rem;
+    height: 32rem;
     padding: 3.563rem 22.5rem 0.625rem 22.5rem;
+    justify-items: center;
 }
 
 .clientlistH {
@@ -542,4 +546,70 @@ body {
     align-items: center;
     justify-items: center;
     margin-top: 3rem;
+}
+
+
+
+.locationGrid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 0.1fr 0.1fr;
+
+}
+
+.locationH {
+    font-family: var(--font-family-second);
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.625rem;
+    color: var(--color-white);
+}
+
+.locationWestCoast {
+    position: relative;
+}
+
+.locationCalifornia {
+    position: relative;
+}
+
+.locationCaliforniaText {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    padding: 1.875rem;
+    gap: 6rem;
+}
+
+.locationWestCoastText {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    padding: 1.875rem;
+    gap: 5rem;
+}
+
+.locationPFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.locationP1 {
+    font-family: var(--font-family-main);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.25rem;
+    color: var(--color-white);
+}
+
+.locationP2 {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: var(--color-white);
+    font-family: var(--font-family-main);
 }
