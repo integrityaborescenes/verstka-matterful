@@ -23,6 +23,10 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+a {
+    text-decoration: none;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -145,6 +149,7 @@ body {
     justify-content: center;
     margin-bottom: 5rem;
     justify-items: stretch;
+
 }
 
 .mainobject1 {
@@ -766,11 +771,21 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.hour {
+}
+
+.minute {
+
+}
+
 .footerGrid {
+    width: 75rem;
+    height: 15.25rem;
     display: grid;
     grid-template-columns: 50% 7% 21% 21%;
     justify-content: center;
-    padding: 5.375rem 22rem 5.375rem 22rem;
+    margin: 0 auto;
+    padding: 5.375rem 24rem 5.375rem 24rem;
     gap: 0.5rem;
 }
 
