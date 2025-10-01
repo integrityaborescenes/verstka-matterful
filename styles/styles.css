@@ -64,8 +64,8 @@ table {
 }
 
 body {
+    max-width: 100%;
     background-color: var(--backgroundcolor);
-    overflow-x: hidden;
 }
 
 .top {
@@ -151,6 +151,10 @@ body {
     justify-items: stretch;
 
 }
+
+.mainobject1, .mainobject2, .mainobject5, .mainobject6, .mainobject8, .mainobject9 {
+    max-width: 100%;
+    width: min(41.875rem, 90vw); }
 
 .mainobject1 {
     grid-area: 1 / 2 / 1 / 2;
@@ -490,7 +494,7 @@ body {
 .services {
     background-color: var(--color-black);
     height: 38.25rem;
-    padding: 3.75rem 22.5rem;
+    padding: 3.75rem 5%;
     margin-top: 5rem;
     justify-items: center;
 }
@@ -553,10 +557,18 @@ body {
     margin-top: 3rem;
 }
 
+.location {
+    max-width: 100%;
+}
+
 .locationGrid {
     display: grid;
     justify-content: center;
     grid-template-columns: 0.1fr 0.1fr;
+}
+
+.locationGrid img{
+    width: 59.55rem;
 }
 
 .locationH {
@@ -754,38 +766,90 @@ body {
 
 .clock {
     position: relative;
-    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
     background: var(--color-black);
     width: 4rem;
     height: 4rem;
 }
 
+.clockM {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: var(--color-black);
+    width: 4rem;
+    height: 4rem;
+}
+
+
 .centerDot {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 0.188rem;
+    border-radius: 50%;
     background: #FDCF31;
     width: 0.375rem;
     height: 0.375rem;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
 }
 
-.hour {
+.hour-hand {
+    width: 1rem;
+    height: 0.150rem;
+    left: 50%;
+    top: 50%;
+    background: #FDCF31;
+    position: absolute;
+    transform: rotate(0deg);
+    transform-origin: 0% 50%;
 }
 
-.minute {
+.minute-hand {
+    width: 1.7rem;
+    height: 0.150rem;
+    left: 50%;
+    top: 50%;
+    background: #FDCF31;
+    position: absolute;
+    transform: rotate(0deg);
+    transform-origin: 0% 50%;
+}
 
+.hour-handM {
+    width: 1rem;
+    height: 0.150rem;
+    left: 50%;
+    top: 50%;
+    background: #FDCF31;
+    position: absolute;
+    transform: rotate(0deg);
+    transform-origin: 0% 50%;
+}
+
+.minute-handM {
+    width: 1.7rem;
+    height: 0.150rem;
+    left: 50%;
+    top: 50%;
+    background: #FDCF31;
+    position: absolute;
+    transform: rotate(0deg);
+    transform-origin: 0% 50%;
 }
 
 .footerGrid {
-    width: 75rem;
+    max-width: 75rem;
     height: 15.25rem;
     display: grid;
     grid-template-columns: 50% 7% 21% 21%;
     justify-content: center;
     margin: 0 auto;
-    padding: 5.375rem 24rem 5.375rem 24rem;
+    padding: 5.375rem 5%;
     gap: 0.5rem;
 }
 
