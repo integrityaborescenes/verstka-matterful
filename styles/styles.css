@@ -543,9 +543,13 @@ body {
 }
 
 .clientList {
-    height: 32rem;
+    max-height: 32rem;
     padding: 3.563rem 22.5rem 0.625rem 22.5rem;
+    max-width: 120rem;
+    justify-content: center;
     justify-items: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
 }
 
 .clientlistH {
@@ -559,8 +563,8 @@ body {
 
 .clientlistGrid {
     display: grid;
-    grid-template-columns: repeat(6, 0.1fr);
-    grid-template-rows: repeat(2, 0.1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
     justify-content: center;
     align-items: center;
@@ -715,7 +719,6 @@ body {
     width: 32.606rem;
     height: 4.813rem;
     padding: 0 0.916rem 0 0.938rem;
-
 }
 
 .signUpFlex h3{
@@ -985,6 +988,34 @@ body {
 
     }
 
+    .clientlistH {
+        font-size: 1.15rem;
+    }
+
+    .locationH {
+        font-size: 0.9rem;
+    }
+
+    .locationP1 {
+        font-size: 0.675rem;
+    }
+
+    .locationP2 {
+        font-size: 0.675rem;
+    }
+
+
+}
+
+@media  (max-width: 800px) {
+    .clientlistGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .clientList {
+        padding-bottom: 3rem;
+    }
 }
 
 @media  (max-width: 1300px) {
@@ -1062,6 +1093,42 @@ body {
         font-size: 1.5rem;
     }
 
+    .clientList {
+        width: 100%;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .clientlistH {
+        font-size: 1.15rem;
+    }
+
+    .contactus h3 {
+        font-size: 1.5rem;
+    }
+
+    .contactus p {
+        font-size: 0.8rem;
+    }
+
+    .signUp {
+        display: flex;
+        flex-direction: column;
+        height: 25rem;
+        padding: 0;
+    }
+
+    .signUpFlex h3 {
+        font-size: 1.3rem;
+    }
+
+    .signUpFlex p {
+        font-size: 0.7rem;
+    }
+
+    .signUp input {
+        width: 50%;
+    }
 }
 
 @media (max-width: 1440px) {
@@ -1185,4 +1252,27 @@ body {
         width: 90%;
     }
 
+    .clientList {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 7rem;
+    }
+
+    .clientlistIMG {
+        max-width: 100%;
+        height: auto;
+        width: 90%;
+    }
+
+    .locationGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .locationIMG {
+        max-width: 100%;
+        height: auto;
+        width: 90%;
+    }
 }
