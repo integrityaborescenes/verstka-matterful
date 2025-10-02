@@ -1027,7 +1027,7 @@ body {
 
 @media  (max-width: 1000px) {
     html {
-        /*overflow-x: hidden;*/
+        overflow-x: hidden;
     }
     .loncaroblock {
         display: grid;
@@ -1128,6 +1128,37 @@ body {
 
     .signUp input {
         width: 50%;
+    }
+
+    .footerGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        height: 20rem;
+    }
+
+    .clockFlex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 100%;
+        justify-items: center;
+    }
+
+    .textFlex {
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+    }
+
+    .textFlex1block {
+        text-align: center;
+    }
+
+    .footerContactsFlex {
+        justify-items: center;
+        align-items: center;
     }
 }
 
