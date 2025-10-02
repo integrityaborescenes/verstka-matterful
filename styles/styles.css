@@ -152,10 +152,6 @@ body {
 
 }
 
-.mainobject1, .mainobject2, .mainobject5, .mainobject6, .mainobject8, .mainobject9 {
-    max-width: 100%;
-    width: min(41.875rem, 90vw); }
-
 .mainobject1 {
     grid-area: 1 / 2 / 1 / 2;
     background-color: var(--color-white);
@@ -179,6 +175,7 @@ body {
     width: 41.875rem;
     height: 36.498rem;
     border-radius: 0.5rem;
+    margin-bottom: 2rem;
 }
 
 .mainObject3 {
@@ -186,8 +183,8 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    width: 29.375rem;
-    height: 36.498rem;
+    max-width: 29.375rem;
+    max-height: 36.498rem;
     border-radius: 0.5em;
     margin-left: 2rem;
     margin-bottom: 2rem;
@@ -255,9 +252,16 @@ body {
 
 .mainobject4 {
     grid-area: 3 / 1 / 3 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-items: end;
     align-items: end;
     margin-right: 2rem;
-    text-align: end;
+}
+
+.mainobject4 img {
+   max-width: 100%;
+    height: auto;
 }
 
 .mainobject5 {
@@ -281,8 +285,8 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    width: 29.375rem;
-    height: 36.498rem;
+    max-width: 29.375rem;
+    max-height: 36.498rem;
     border-radius: 0.5em;
     margin-right: 2rem;
     margin-bottom: 2rem;
@@ -324,6 +328,7 @@ body {
     width: 41.875rem;
     height: 36.498rem;
     border-radius: 0.5rem;
+    margin-bottom: 2rem;
 }
 
 .mainobject9 {
@@ -338,8 +343,9 @@ body {
 .mainobject10 {
     grid-area: 6 / 2 / 6 / 2;
     background-color: var(--color-white);
-    width: 29.375rem;
-    height: 38rem;
+    max-width: 29.375rem;
+    max-height: 38rem;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -397,20 +403,24 @@ body {
 .mainobject11 {
     grid-area: 7 / 1 / 7 / 2;
     background-color: var(--color-white);
-    width: 35.625rem;
-    height: 40.712rem;
+    max-width: 35.625rem;
+    max-height: 40.712rem;
+    width: 100%;
     border-radius: 0.5rem;
     margin-left: 20%;
 }
 
 .mainobject12 {
     grid-area: 7 / 2 / 7 / 2;
+    display: flex;
+    flex-direction: column;
     align-items: end;
     margin-right: 2rem;
-    text-align: end;
 }
 
 .mainobject12 img{
+    max-width: 100%;
+    height: auto;
     border-radius: 0.5rem;
 }
 
@@ -479,6 +489,7 @@ body {
     justify-items: end;
 }
 
+
 .GalleryPhotos2 {
     display: grid;
     grid-template-columns: repeat(5, 0.1fr);
@@ -488,7 +499,6 @@ body {
     gap: 1.5rem;
     align-items: start;
     justify-items: start;
-
 }
 
 .services {
@@ -510,6 +520,7 @@ body {
     margin-bottom: 0.75rem;
 }
 
+
 .servicesP {
     color: var(--color-white);
     font-family: var(--font-family-main);
@@ -523,8 +534,8 @@ body {
 
 .servicesGrid {
     display: grid;
-    grid-template-columns: repeat(4, 0.1fr);
-    grid-template-rows: repeat(2, 0.1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
     justify-content: center;
     align-items: center;
@@ -812,8 +823,8 @@ body {
 .minute-hand {
     width: 1.7rem;
     height: 0.150rem;
-    left: 50%;
-    top: 50%;
+    left: 52%;
+    top: 48%;
     background: #FDCF31;
     position: absolute;
     transform: rotate(0deg);
@@ -836,6 +847,8 @@ body {
     height: 0.150rem;
     left: 50%;
     top: 50%;
+
+
     background: #FDCF31;
     position: absolute;
     transform: rotate(0deg);
@@ -929,4 +942,247 @@ body {
     font-family: var(--font-family-main);
     color: var(--color-white);
     text-align: center;
+}
+
+/*Адаптив медиа запросы*/
+
+@media  (max-width: 500px) {
+    .logo {
+        width: 75%;
+    }
+
+    .textUnderLogo {
+        font-size: 0.8rem;
+    }
+
+    .loncaroH {
+        font-size: 1.5rem;
+    }
+
+    .loncaroP {
+        font-size: 0.7rem;
+    }
+
+    .loncaroP2 {
+        font-size: 0.8rem;
+    }
+
+    .mainH {
+        font-size: 1.5rem;
+    }
+
+    .sliderP{
+        line-height: 1.1rem;
+    }
+
+    .sliderH3 {
+        line-height: 1.5rem;
+    }
+
+    .servicesGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media  (max-width: 1300px) {
+    .loncaroImage {
+        width: 70%;
+    }
+}
+
+
+@media  (max-width: 1000px) {
+    html {
+        /*overflow-x: hidden;*/
+    }
+    .loncaroblock {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        justify-items: center;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .loncaroTextBlock {
+        padding-top: 1rem;
+    }
+
+    .loncaroImage {
+        left: 0;
+        padding-top: 0;
+        width: 50vh;
+    }
+
+    .mainobjectimage {
+    }
+
+    .mainobjectH3 {
+        font-size: 1.5rem;
+    }
+
+    .mainobjectP {
+        font-size: 0.6rem;
+    }
+
+    .mainobjectP2 {
+        font-size: 0.75rem;
+    }
+
+    .sliderP{
+        font-size: 0.7rem;
+        padding-bottom: 0;
+    }
+
+    .sliderH3 {
+        font-size: 1rem;
+        padding-bottom: 0;
+    }
+
+    .galleryH {
+        font-size: 1.5rem;
+    }
+
+    .galleryP {
+        font-size: 0.8rem;
+    }
+
+    .galleryLogo {
+        width: 10%;
+    }
+
+    .servicesP {
+        font-size: 0.8rem;
+    }
+
+    .servicesH {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 1440px) {
+    .mainblock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .mainobject1, .mainobject2, .mainobject5, .mainobject6, .mainobject8, .mainobject9
+    {
+        margin-bottom: 2rem;
+        width: 75%;
+        height: 75%;
+    }
+
+    .mainobjectimage {
+        width: 100%
+    }
+
+    .mainObject3 {
+        margin-left: 0;
+        width: 75%;
+    }
+
+    .beforeLabel {
+        width: 20%;
+    }
+
+    .afterLabel {
+        width: 20%;
+    }
+
+    .mainobject4 {
+        max-width: 75%;
+        justify-items: center;
+        align-items: center;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .mainObject7 {
+        max-width: 75%;
+        left: 0;
+        margin-right: 0;
+    }
+
+    .beforeLabel2 {
+        width: 20%;
+    }
+
+    .afterLabel2 {
+        width: 20%;
+    }
+
+    .mainobject10 {
+        margin-bottom: 2rem;
+        margin-left: 0;
+        width: 75%;
+    }
+
+    .slider {
+        width: 75%;
+    }
+
+    .slider img {
+        width: 25%;
+    }
+
+    .slider2 img {
+        width: 25%;
+    }
+
+
+    .mainobject11 {
+        margin-left: 0;
+        width: 75%;
+        margin-bottom: 2rem;
+    }
+
+    .mainobject12 {
+        width: 75%;
+        margin: 0;
+        align-items: center;
+    }
+
+    .GalleryPhotos img {
+        width: 100%;
+        height: auto;
+    }
+
+    .GalleryPhotos2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .GalleryPhotosGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .GalleryPhotos {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .GalleryPhotos2 {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicesImg {
+        max-width: 100%;
+        height: auto;
+        width: 90%;
+    }
+
 }
